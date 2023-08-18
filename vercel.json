@@ -1,15 +1,20 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "./message.js",
-        "use": "@vercel/node"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "/"
-      }
-    ]
-  }
+  "version": 2,
+  "builds": [
+    {
+      "src": "server/message.js",
+      "use": "@vercel/node"
+    }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/send-email",
+      "dest": "server/message.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "server/message.js"
+    }
+  ]
+}
