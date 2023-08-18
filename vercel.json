@@ -3,13 +3,13 @@
     "builds": [
       {
         "src": "./message.js",
-        "use": "@vercel/node"
+        "use": "@now/node"
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "/"
+        "dest": "message.js"
       }
     ]
   }
