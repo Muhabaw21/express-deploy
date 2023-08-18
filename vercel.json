@@ -5,7 +5,6 @@
       "src": "server/message.js",
       "use": "@vercel/node"
     }
-    }
   ],
   "routes": [
     {
